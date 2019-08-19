@@ -32,7 +32,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
   - Explain plan
 + 14 : Droits et sécurité des objets
   - GRANT, REVOKE
-+ 15 : Introduction SQL*Net et les connecteurs
++ 15 : Introduction à SQL*Net et les connecteurs
    - Connectivité à partir d'une application distante
 + 16 : Introduction et théorie des entrepôts de données
   - Schéma en étoile, table maître et table de faits, modélisation
