@@ -11,7 +11,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 
 ### Plan de cours
 +  1 : Introduction aux systèmes de gestion de bases de données (nom, type, rôle et environnement)
-   - Neo4J, SQLite, SQL Server, Oracle
+   - Neo4J, SQLite, SQL Server, Oracle, PostgreSQL, Kyoto Cabinet
 +  2 : Introduction au modèle entité-association
 +  3 : Introduction au modèle relationnel
    - schéma, formes normales, normalisation vs dénormalisation, notation, type de données
@@ -21,7 +21,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 +  6 : Le langage SQL et les requêtes avancées 
    - filtre, jonction et groupement
 +  7 : Le langage SQL partie DDL (CREATE, DROP, ALTER) 
-   - table, view, index, sequence, contrainte, integrité
+   - table, view, index, sequence, contrainte, intégrité
 +  8 : Le langage SQL partie DML (INSERT, DELETE, UPDATE)
    - le mode transactionnel Oracle (COMMIT, ROLLBACK)
 +  9 : La programmation PL/SQL pour la création de fonctions et procédures
@@ -31,5 +31,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
   - Explain plan
 + 13 : Droits et sécurité des objets
   - GRANT, REVOKE
-+ 14 : Introduction et théorie des entrepôts de données
++ 14 : Introduction SQL*Net et les connecteurs
+   - Connectivité à partir d'une application distante
++ 15 : Introduction et théorie des entrepôts de données
   - Schéma en étoile, table maître et table de faits, modélisation
