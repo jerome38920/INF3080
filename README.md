@@ -17,7 +17,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
    - schéma, formes normales, normalisation vs dénormalisation, notation, type de données
 +  4 : Introduction à l'algèbre relationnelle
 +  5 : Introduction à Oracle et SQL*plus dans un environnement Linux
-   - connection, commandes de base, scripts
+   - connexion, commandes de base, scripts
 +  6 : Introduction au langage SQL et aux objets système du SGBDR Oracle
 +  7 : Le langage SQL et les requêtes avancées
    - filtre, jonction et groupement
