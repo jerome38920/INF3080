@@ -19,6 +19,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 +  5 : Introduction à Oracle et SQL*plus dans un environnement Linux
    - connexion, commandes de base, scripts
 +  6 : Introduction au langage SQL et aux objets système du SGBDR Oracle
+   - 12 règles de Codd
 +  7 : Le langage SQL et les requêtes avancées
    - filtre, jonction et groupement
 +  8 : Le langage SQL partie DDL (CREATE, DROP, ALTER) 
@@ -36,3 +37,30 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
    - Connectivité à partir d'une application distante
 + 16 : Introduction et théorie des entrepôts de données
   - Schéma en étoile, table maître et table de faits, modélisation
+  
+### Modalités d'évaluation proposées 
+
+#### Examens : 
+ + Examen #1 : %, 26 octobre 2019 de 14:00 à 17:00
+ + Examen #2 : %, 14 décembre 2019 de 14:00 à 17:00
+
+##### Directives
+ + Avoir votre carte d'étudiant UQAM valide;
+ + Une feuille (format lettre) recto verso de notes personnelles est permise;
+ + Vous ne pouvez pas collaborer avec un partenaire;
+ + Vous ne pouvez pas prendre les notes personnelles d'un voisin;
+ + Bien lire les questions;
+ + Vous devez réfléchir avant de répondre;
+ + Répondre dans les espaces prévus;
+ + Vous avez trois (3) heures;
+ + **Signez la feuille de présence avant votre départ.**
+ 
+#### Travaux :
+ + Travail pratique #1 : modélisation x%
+ + Travail pratique #2 : réalisation y%
+ + Travail pratique #3 : utilisation z%
+  
+### Références
+ - https://www.researchgate.net/scientific-contributions/70214812_E_F_Codd
+ - Oracle technet
+ - Robert Godin, UQAM, Professeur
