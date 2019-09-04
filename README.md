@@ -15,11 +15,12 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 +  2 : Introduction au modèle entité-association
 +  3 : Introduction au modèle relationnel
    - schéma, formes normales, normalisation vs dénormalisation, notation, type de données
-   - les 12 règles de Codd
+   - se familiariser avec les 12 règles de Codd
 +  4 : Introduction à l'algèbre relationnelle
 +  5 : Introduction à Oracle et SQL*plus dans un environnement Linux
    - connexion, commandes de base, scripts
    - Les objets système du SGBDR Oracle
+   - La requête la plus simple : SELECT * FROM DUAL;
 +  6 : Le langage SQL partie DDL (CREATE, DROP, ALTER) 
    - table, view, index, sequence, contrainte, intégrité
 +  7 : Le langage SQL
@@ -67,7 +68,6 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 #### Travaux :
  + Travail pratique #1 : modélisation x%
  + Travail pratique #2 : réalisation y%
- + Travail pratique #3 : utilisation z%
  
 ##### Directives des travaux :
  + Remise électronique (privé) via GitHub.com
