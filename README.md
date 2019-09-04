@@ -51,8 +51,8 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 ### Modalités d'évaluation proposées 
 
 #### Examens
- + Examen Intra (#1) : %, 26 octobre 2019 de 14:00 à 17:00
- + Examen Final (#2) : %, 14 décembre 2019 de 14:00 à 17:00
+ + Examen Intra (#1) : 30%, 26 octobre 2019 de 14:00 à 17:00
+ + Examen Final (#2) : 30%, 14 décembre 2019 de 14:00 à 17:00
 
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
@@ -66,8 +66,8 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + **Signez la feuille de présence avant votre départ.**
  
 #### Travaux :
- + Travail pratique #1 : modélisation x%
- + Travail pratique #2 : réalisation y%
+ + Travail pratique #1 : modélisation 25%
+ + Travail pratique #2 : réalisation 15%
  
 ##### Directives des travaux :
  + Remise électronique (privé) via GitHub.com
