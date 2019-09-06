@@ -1,4 +1,4 @@
-# INF3080
+# INF3080 edition Automne 2019
 INF3080 Bases de données
 
 ## Objectifs
@@ -56,7 +56,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
- + Une feuille (format lettre) recto verso de notes personnelles est permise;
+ + Une feuille (format lettre) recto verso de notes personnelles est permise; (pourrait changer)
  + Vous ne pouvez pas collaborer avec un partenaire;
  + Vous ne pouvez pas prendre les notes personnelles d'un voisin;
  + Bien lire les questions;
