@@ -1,5 +1,6 @@
-# Séance 1: Connexion ssh, Nano, Commandes Linux, Markdown et Git
+# Séance 1: Connexion ssh, Nano, Markdown et Git
 
+- Objectif : Gagner en aisance avec l'environnement Linux
 
 ## 1 - Établir une connexion SSH
 
@@ -22,7 +23,7 @@ probablement celui avec lequel vous aurez à travailler.  Habituez-vous maintena
 
 ## 2 - GNU nano
 
-Voici quelques commandes pour configurer votre environnement de developpement.
+Voici quelques commandes pour configurer votre environnement de développement.
 Il est aussi possible de le configurer pour faire du Java, Bash, etc.  Cet exemple est pour
 le langage C. Mais regarder les fichiers disponibles pour les autres langages.
 
@@ -47,7 +48,7 @@ pour changer de répertoire, essayez ceci :
 
 ```$ cd ex``` <kbd>TAB</kbd>
 
-## 3b - Commandes Linux/Unix - Pratiques
+## 3b - Commandes Linux/Unix - Pratiques plus
 
 Dans la première partie de ce laboratoire, vous allez pratiquer les commandes
 Unix grâce à un jeu sérieux. Rendez vous sur le site
