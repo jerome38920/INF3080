@@ -32,7 +32,7 @@ $ cd ; cat /usr/share/nano/c.nanorc >> .nanorc
 $ pwd
 ```
 
-## 3a - Commandes Linux - Préparation et Stratégies
+## 3a - Commandes Linux/Unix - Préparation et Stratégies
 
 Il serait important de penser à une stratégie de répertoire afin de garder mes fichiers
 dans une structure adéquate.  Des répertoires sont nécessaires pour ne pas mettre tout au même
@@ -47,7 +47,7 @@ pour changer de répertoire, essayez ceci :
 
 ```$ cd ex``` <kbd>TAB</kbd>
 
-## 3b - Commandes Unix - Pratiques
+## 3b - Commandes Linux/Unix - Pratiques
 
 Dans la première partie de ce laboratoire, vous allez pratiquer les commandes
 Unix grâce à un jeu sérieux. Rendez vous sur le site
