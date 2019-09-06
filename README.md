@@ -1,4 +1,4 @@
-# INF3080 edition Automne 2019
+# INF3080 édition Automne 2019
 INF3080 Bases de données
 
 ## Objectifs
@@ -66,11 +66,15 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + **Signez la feuille de présence avant votre départ.**
  
 #### Travaux :
- + Travail pratique #1 : modélisation 25%
- + Travail pratique #2 : réalisation 15%
+ + Travail pratique #1 : modélisation et construction 20%
+ + Travail pratique #2 : Implémentation et optimisation 20%
  
 ##### Directives des travaux :
  + Remise électronique (privé) via GitHub.com
+
+##### Points bonus :
+ + Il est possible d'obtenir des points pour des contributions extraordinaires.
+ + Si 
 
 ### Références
  - https://info.uqam.ca/politiques/
