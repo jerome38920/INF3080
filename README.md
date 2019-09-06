@@ -73,8 +73,8 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + Remise électronique (privé) via GitHub.com
 
 ##### Points bonus :
- + Il est possible d'obtenir des points pour des contributions extraordinaires.
- + Si 
+ + Il est possible d'obtenir des points pour des contributions extraordinaires;
+ + Les points bonus sont à mon entière discrétion.
 
 ### Références
  - https://info.uqam.ca/politiques/
