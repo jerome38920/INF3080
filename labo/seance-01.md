@@ -5,13 +5,13 @@
 ## 1 - Établir une connexion SSH
 
 Dans le cadre de ce cours, des comptes ont été créés pour chacun d'entre vous
-sur le serveur *Moka* (`moka.labunix.uqam.ca`). Pour vous y connecter, vous devez
+sur le serveur *Zeta2* (`zeta2.labunix.uqam.ca`). Pour vous y connecter, vous devez
 connaître votre identifiant MS (2 lettres suivies de 6 chiffres) ainsi que
 votre NIP.
 
 Familiarisez-vous avec les étapes de base pour établir une connexion SSH. Le
 mécanisme sera différent selon que vous travaillez sous Windows, Mac OS ou
-Linux. Il s'agit d'une partie très importante, car vos travaux pratiques devront minimalement fonctionner sur le serveur Moka.
+Linux. Il s'agit d'une partie très importante, car vos travaux pratiques devront minimalement fonctionner sur le serveur Zeta2.
 
 Parfois, certains comptes étudiants ne sont pas activés sur les serveurs, alors
 envoyez-moi un courriel si c'est votre cas et le problème devrait être réglé rapidement.
