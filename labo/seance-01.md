@@ -373,11 +373,12 @@ $
 
    GitHub diffère un peu de GitLab sur ce point.
 
-   Soit vous créez votre dépôt par le site web de GitHub (avec votre souris)
-      OU
-   Soit vous utilisez la commande suivante:
+   Soit : 
+   - vous créez votre dépôt par le site web de GitHub (avec votre souris)
+   -   OU
+   - vous utilisez la commande suivante :
 
-   ```shell
+```shell
    $ curl -u 'username' https://api.github.com/user/repos -d \
    '{"name":"MON REPO", "private": true, "description":"MA DESCRIPTION"}'
    ```
