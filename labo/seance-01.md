@@ -91,7 +91,7 @@ Vous pouvez utiliser [Stackedit.io](https://stackedit.io) pour vous permettre de
   les autres options par défaut puis confirmez la création.
 
 #### Étape 5.2
-- Connectez-vous au serveur `moka.labunix.uqam.ca` via `ssh` avec votre codeMS
+- Connectez-vous au serveur `zeta2.labunix.uqam.ca` via `ssh` avec votre codeMS
 
 - Tout d'abord il faut configurer l'environnement. Ceci est nécessaire pour que vous soyez en mesure de connecter le dépôt `GitLab`.
 
@@ -238,7 +238,7 @@ $
   les autres options par défaut puis confirmez la création.
 
 #### Étape 6.2
-- Connectez-vous au serveur `moka.labunix.uqam.ca` via `ssh` avec votre codeMS.
+- Connectez-vous au serveur `zeta2.labunix.uqam.ca` via `ssh` avec votre codeMS.
 
 - Tout d'abord il faut configurer l'environnement. Ceci est nécessaire pour que vous soyez en mesure de connecter le dépôt `GitHub`.
 
