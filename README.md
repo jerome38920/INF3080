@@ -77,9 +77,9 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + Les points bonus sont à mon entière discrétion.
 
 ### Références
- - https://info.uqam.ca/politiques/
- - https://www.researchgate.net/scientific-contributions/70214812_E_F_Codd
- - https://computing.derby.ac.uk/c/codds-twelve-rules/
+ - [Politiques du département Informatique](https://info.uqam.ca/politiques/)
+ - [researchGate, EF Codd](https://www.researchgate.net/scientific-contributions/70214812_E_F_Codd)
+ - [Les douzes règles de Codd](https://computing.derby.ac.uk/c/codds-twelve-rules/)
  - [The Entity-Relationship Model-Toward a Unified View of Data, Peter Chen, 1976](http://www.inf.unibz.it/~nutt/IDBs1011/IDBPapers/chen-ER-TODS-76.pdf)
  - [A preliminary framework for entity relationship models, Peter Chen, 1983](http://bit.csc.lsu.edu/~chen/pdf/framework.pdf)
  - Oracle technet
