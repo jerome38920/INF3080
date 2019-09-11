@@ -66,8 +66,8 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + **Signez la feuille de présence avant votre départ.**
  
 #### Travaux :
- + Travail pratique #1 : modélisation et construction 20%
- + Travail pratique #2 : Implémentation et optimisation 20%
+ + Travail pratique #1 : modélisation et construction 15%
+ + Travail pratique #2 : Implémentation et optimisation 25%
  
 ##### Directives des travaux :
  + Remise électronique (privé) via GitHub.com
@@ -80,5 +80,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  - https://info.uqam.ca/politiques/
  - https://www.researchgate.net/scientific-contributions/70214812_E_F_Codd
  - https://computing.derby.ac.uk/c/codds-twelve-rules/
+ - [The Entity-Relationship Model-Toward a Unified View of Data, Peter Chen, 1976](http://www.inf.unibz.it/~nutt/IDBs1011/IDBPapers/chen-ER-TODS-76.pdf)
+ - [A preliminary framework for entity relationship models, Peter Chen, 1983](http://bit.csc.lsu.edu/~chen/pdf/framework.pdf)
  - Oracle technet
  - Robert Godin, UQAM, Professeur
