@@ -63,13 +63,16 @@ En revanche, une fois connecté sur Oracle, le shell fournit par Oracle est un p
 et empêche de retourner en arrière (affiche les signes [[D^[[A^[[C^...etc). 
 
 Je voulais vous proposer de rajouter la commande rlwrap avant de lancer sqlplus. 
-Vous le connaissez peut être déjà, mais rlwrap est un outil qui permet d'éditer une commande en utilisant la librairie readline de gnu. On peut ainsi revenir en arrière avec les flèches quand on a fait une faute et on peut aussi accéder a l'historique des commandes avec la flèche du haut (comme dans bash).
+Vous le connaissez peut être déjà, mais `rlwrap` est un outil qui permet d'éditer une commande en utilisant la librairie readline de gnu. On peut ainsi revenir en arrière avec les flèches quand on a fait une faute et on peut aussi accéder a l'historique des commandes avec la flèche du haut (comme dans bash).
 
-On peut soit utiliser rlwrap en lançant sqlplus comme mentionné dans le fichier connection.md :
+On peut soit utiliser `rlwrap` en lançant `sqlplus` comme mentionné dans le fichier `connection.md` :
+
 ```
 rlwrap sqlplus <usager|codems>/<mot de passe>
 ```
+
 Ou l'utiliser la commande avant de lancer le script :
+
 ```
 rlwrap ./start.sh
 ```
