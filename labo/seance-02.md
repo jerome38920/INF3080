@@ -47,8 +47,39 @@ Nous l'appellerons le modèle conceptuel enrichi.
 
 Si vous désirez faire un diagramme de classes, c'est possible. Faites-le dans une deuxième passe de votre réflexion.
 
+__Note__ : ne pas prendre plus de 15 minutes pour faire l'exercice. Si vous avez besoin de plus de temps pour finaliser, prendre une pause et revenir pour 5 minutes.
+
+#### Questions:
++ Q1. Quelle est la difficulté ?
++ Q2. Avez vous réussi en moins de 15 minutes ?
++ Q3. Produire modèle dans un fichier.
+
 ### 1b - module de gestion d'une flotte de camions du style 53'
 
+Maintenant que vous êtes bien échauffé, vous devez maintenant vous mettre dans la tête d'un
+informaticien qui un mandat pour modéliser une partie d'un système pour un transporteur 
+majeur (Robert Transport, Guilbeault, Day & Ross).  Vous avez dû les voir sur les routes.
+
+Votre rôle est de faire le modèle conceptuel pour la gestion d'une flotte de remorques + tracteurs (camions).
+Vous devez savoir que les camions sont à un seul endroit dans le monde.  La latitude, longitude est utilisé
+pour situer le camion sur la terre.
+
+En plus de lister des camions, ce que nous voulons maintenir c'est combien coûtent un camion qui roule, 
+lors qu'il est vide ou lorsqu'il est chargé (plein).  Vous venez de réaliser qu'une capacité de chargement est un
+aspect important de ce domaine.  Vous savez aussi que les camions fonctionnent au pétrole, diesel (gazoualle) 
+pour certains. Ils n'ont pas tous la même consommation.
+
+Encore, une fois gardez-le tout simple. Votre modèle conceptuel enrichi (MCE) contiendra l'information suivante :
+entités, attributs, associations et sans oublié la cardinalité.
+
+Bonne réflexion.
+
+Notes :
+ + utilisez une méthode itérative pour faire le travail.
+ + ne pas utiliser word ou excel pour faire ce devoir.
+
+#### Questions:
+ + Q1. Rendre disponible votre modèle en format pdf ou autre. 
 
 ## 2 - ssh + nano + sqlplus
 ##### Contribution MT, UQAM
@@ -62,8 +93,8 @@ et tout fonctionne, soyez fier. :relieved:
 En revanche, une fois connecté sur Oracle, le shell fournit par Oracle est un peu arride (brutale) à l'utilisation 
 et empêche de retourner en arrière (affiche les signes [[D^[[A^[[C^...etc). 
 
-Je voulais vous proposer de rajouter la commande rlwrap avant de lancer sqlplus. 
-Vous le connaissez peut être déjà, mais `rlwrap` est un outil qui permet d'éditer une commande en utilisant la librairie readline de gnu. On peut ainsi revenir en arrière avec les flèches quand on a fait une faute et on peut aussi accéder a l'historique des commandes avec la flèche du haut (comme dans bash).
+Je vous propose de rajouter la commande `rlwrap` avant de lancer `sqlplus`. 
+Vous le connaissez peut être déjà, mais `rlwrap` est un outil qui permet d'éditer une commande en utilisant la librairie readline de gnu. On peut ainsi revenir en arrière avec les flèches quand on a fait une faute et on peut aussi accéder à l'historique des commandes avec la flèche du haut (comme dans bash).
 
 On peut soit utiliser `rlwrap` en lançant `sqlplus` comme mentionné dans le fichier `connection.md` :
 
