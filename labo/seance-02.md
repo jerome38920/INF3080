@@ -38,9 +38,9 @@ Vous devez dans cet exercice créer un modèle conceptuel qui existe dans tous l
 Il est probable que vous ayez à faire ceci plusieurs fois dans votre parcours professionnel.
 
 Quelles sont les entités, attributs et les associations nécessaires pour obtenir un modèle simple et compréhensible pour une personne
-comme l'enseignant du cours INF3080 A2019..  :satisfied:
+comme l'enseignant du cours INF3080 A2019.  :wink:
 
-Afin de rendre le tout un petit peu plus complet j'aimerais que soit ajouté la cardinalité entre les entités
+Afin de rendre le tout un petit peu plus complet j'aimerais que soit ajouté la cardinalité entre les entités.
 
 Utilisé la notation hongroise bien que celle-ci ne soit pas nécessaire dans un modèle conceptuel.  
 Nous l'appellerons le modèle conceptuel enrichi.
