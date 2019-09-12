@@ -1,5 +1,5 @@
-##### Droits d'auteur :copyright: matériel protégé : Si vous n'êtes pas un étudiant du cours INF3080-030 A2019 vous devez 
-demander une permission pour l'utilisation de ce matériel.
+##### Droits d'auteur :copyright: matériel protégé 
+  - Si vous n'êtes pas un étudiant du cours INF3080-030 A2019 vous devez demander une permission pour l'utilisation de ce matériel.
 
 # Séance 1: Connexion ssh, Nano, Markdown et Git
 
