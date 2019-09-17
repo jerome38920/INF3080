@@ -64,10 +64,11 @@ Votre rôle est de faire le modèle conceptuel pour la gestion d'une flotte de r
 Vous devez savoir que les camions sont à un seul endroit dans le monde.  La latitude, longitude est utilisé
 pour situer le camion sur la terre.
 
-En plus de lister des camions, ce que nous voulons maintenir c'est combien coûtent un camion qui roule, 
-lors qu'il est vide ou lorsqu'il est chargé (plein).  Vous venez de réaliser qu'une capacité de chargement est un
+En plus de lister des camions, ce que nous voulons maintenir est combien coûte un camion qui roule. Deux états 
+sont utiles pour le calcul: vide ou chargé (plein).  Vous venez de réaliser qu'une capacité de chargement est un
 aspect important de ce domaine.  Vous savez aussi que les camions fonctionnent au pétrole, diesel (gazoualle) 
-pour certains. Ils n'ont pas tous la même consommation. Les véhicules routiers ont aussi besoin d'une assurance. 
+pour certains. Ils n'ont pas tous la même consommation. Les véhicules routiers sont identifiables, ont tous
+une plaque et ont aussi besoin d'une assurance.
 
 Encore, une fois gardez-le tout simple. Votre modèle conceptuel enrichi (MCE) contiendra l'information suivante :
 entités, attributs, associations et sans oublié la cardinalité.
