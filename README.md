@@ -12,10 +12,11 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 ### Plan de cours
 +  1 : Introduction aux systèmes de gestion de bases de données (nom, type, rôle et environnement)
    - Neo4J, SQLite, SQL Server, Oracle, PostgreSQL, Kyoto Cabinet
-+  2 : Introduction au modèle entité-association
++  2 : Introduction au modèle conceptuel entité-association
+   - notation hongroise, type de données
 +  3 : Introduction au modèle relationnel
-   - schéma, formes normales, normalisation vs dénormalisation, notation, type de données
-   - se familiariser avec les 12 règles de Codd
+   - schéma, dépendance fonctionnelle, formes normales, normalisation vs dénormalisation
+   - Lecture : Se familiariser avec les 12 règles de Codd
 +  4 : Introduction à l'algèbre relationnelle
 +  5 : Introduction à Oracle et SQL*plus dans un environnement Linux
    - connexion, commandes de base, scripts
@@ -27,11 +28,10 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
    - partie DML (INSERT, DELETE, UPDATE)
    - partie TCL (COMMIT, ROLLBACK, ...)
    
-+ Mi-Session
-
 +  8 : Le langage SQL et les requêtes avancées
    - filtre, jonction, groupement, sous-requête
    - Initiation au PL/SQL et les fonctions
+
 + 9 : La programmation PL/SQL pour la création de gâchettes
 + 10 : La programmation PL/SQL pour la création de procédures et packages
 + 11 : La programmation PL/SQL Les curseurs
@@ -46,7 +46,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 + 15 : Introduction et théorie des entrepôts de données
   - Schéma en étoile, table maître et table de faits, modélisation
 
-+ Fin de session.
++ Bravo, fin de session.
 
 ### Modalités d'évaluation proposées 
 
