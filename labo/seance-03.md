@@ -31,12 +31,12 @@ vous entraîner à utiliser le logiciel naturellement.
 
 ## 1 - Modèle relationnel normalisé
 
-### 1a - module de connexion d'une application Web
+### 1a - module de connexion (gestion des accès) d'une application Web
 
 Vous devez dans cet exercice convertir le modèle conceptuel de la séance précédente en modèle relationnel normalisé. 
 Utiliser la notation hongroise telle que vue en classe.
 
-Le module de connexion a les entités suivantes :
+Le module de gestion des accès a les entités suivantes :
  + Usager
  + Connexion
  + Historique
