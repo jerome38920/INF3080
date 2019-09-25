@@ -66,7 +66,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + **Signez la feuille de présence avant votre départ.**
  
 #### Travaux :
- + Travail pratique #1 : modélisation et construction 15%
+ + Travail pratique #1 : modélisation et construction 15% [ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp1.md)
  + Travail pratique #2 : Implémentation et optimisation 25%
  
 ##### Directives des travaux :
