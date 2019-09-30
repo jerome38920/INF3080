@@ -36,11 +36,20 @@ en utilisant l'algèbre relationnelle et le modèle relationnel qui suit.
 
 [modele](./modele.png)
 
-#### Questions:
-+ Q1. Quelle est la difficulté ?
-+ Q2. Avez-vous réussi en moins de 35 minutes ?
-+ Q3. Produire modèle dans un fichier.
 
+#### Langue (données)
+
+| pLangue | cLangue |
+| :------ | :------ |
+| 1       | Francais |
+| 2       | Anglais |
+
+#### Questions:
++ Q1. Lister les usagers(nom) qui ont des sessions actives;
++ Q2. Lister les sessions qui ne sont pas actives qui ont utilisées le français;
++ Q3. Lister les demandes de rappels de mot de passe qui ont eu lieu le 2019-10-30;
++ Q4. Lister les langues disponibles en utilisant le l'attribut cLangue vers Langage uniquement;
++ Q5. Lister les courriels seulement des usagers qui parlent anglais;
 
 ----
 Auteur :copyright: Guy Francoeur
