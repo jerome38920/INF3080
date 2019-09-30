@@ -31,14 +31,14 @@ vous entraîner à utiliser le logiciel naturellement.
 
 ## 1 - Modèle relationnel normalisé
 
-### 1a - module de connexion (gestion des accès) d'une application Web
+### 1a - module de ~~connexion~~ gestion des accès d'une application Web
 
 Vous devez dans cet exercice convertir le modèle conceptuel de la séance précédente en modèle relationnel normalisé. 
 Utiliser la notation hongroise telle que vue en classe.
 
 Le module de gestion des accès a les entités suivantes :
  + Usager
- + Connexion
+ + Connexion aka Login
  + Historique
  + Session
 
@@ -66,7 +66,7 @@ relationnel pour la gestion d'une flotte de remorques + tracteurs (camions).
 Vous devez savoir que les camions sont à un seul endroit dans le monde.
 La latitude, longitude est utilisé pour situer le camion sur la terre.
 
-En plus de lister des camions, ce que nous voulons maintenir est combien coûte un camion qui roule.
+En plus de lister des camions, ce que nous voulons sauvegarder est combien coûte un camion lorsqu'il roule.
 Deux états sont utiles pour le calcul: vide ou chargé (plein).  Vous venez de réaliser qu'une capacité
 de chargement est un aspect important de ce domaine.  Vous savez aussi que les camions fonctionnent au
 pétrole, diesel (gazoualle) pour certains. Ils n'ont pas tous la même consommation. Les véhicules 
