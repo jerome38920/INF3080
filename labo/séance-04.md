@@ -48,7 +48,7 @@ en utilisant l'algèbre relationnelle et le modèle relationnel qui suit.
 + Q1. Lister les usagers(nom) qui ont des sessions actives;
 + Q2. Lister les sessions qui ne sont pas actives qui ont utilisées le français;
 + Q3. Lister les demandes de rappels de mot de passe qui ont eu lieu le 2019-10-30;
-+ Q4. Lister les langues disponibles en utilisant le l'attribut cLangue vers Langage uniquement;
++ Q4. Lister les langues (sans les clés) disponibles en utilisant l'attribut cLangue renommé vers Langage;
 + Q5. Lister les courriels seulement des usagers qui parlent anglais;
 
 ----
