@@ -5,7 +5,8 @@
   
 ### Q
   + R' = SELECTION(cLanguage='Francais', JOINTURE(Historique,pLangue=pLangue, Langue) )
-  + La jointure n'est pas naturelle dans ce cas car il n'y a pas de lien entre les tables (fk)
+  + La jointure n'est pas naturelle dans ce cas car il n'y a pas de lien entre les tables (fk);
+  + Ceci est aussi vrai, car, la précision du modèle fourni établi les associations;
   
 ### Q3.
   + R' = SELECTION(dDemande='2019-10-30', Securite)
