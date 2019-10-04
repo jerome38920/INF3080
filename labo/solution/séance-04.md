@@ -1,7 +1,7 @@
 ## Solutions Séance-04
 
 ### Q1.
-  + R' = PROJECTION(cUsager, JOINTURE_NATURELLE(JOINTURE_NATURELLE(Connexion,Session),Usager) )
+  + R' = PROJECTION(cUsager, JOINTURE_NATURELLE(JOINTURE_NATURELLE(Connexion, Session), Usager) )
   
 ### Q
   + R' = SELECTION(cLanguage='Francais', JOINTURE(Historique,pLangue=pLangue, Langue) )
