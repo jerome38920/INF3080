@@ -15,5 +15,5 @@
  + R' = PROJECTION(Langage, ALIAS(cLangue/Langage, Langue) )
 
 ### Q5. 
-  + R' = POJECTION(cCouriel, SELECTION(pLangue=2, JOINTURE_NATURELLE(Langue, JOINTURE_NATURELLE(Usager,Connexion) ) ) )
+  + R' = PROJECTION(cCouriel, SELECTION(pLangue=2, JOINTURE_NATURELLE(Langue, JOINTURE_NATURELLE(Usager, Connexion) ) ) )
   
