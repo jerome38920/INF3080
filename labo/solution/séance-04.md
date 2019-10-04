@@ -3,11 +3,12 @@
 ### Q1.
   + R' = PROJECTION(cUsager, JOINTURE_NATURELLE(JOINTURE_NATURELLE(Connexion,Session),Usager))
   
-### Q2.
-  + R' = SELECTION( JOINTURE(Historique,pLangue=pLangue, Langue), cLanguage='Francais')
+### Q
+  + R' = SELECTION(cLanguage='Francais', JOINTURE(Historique,pLangue=pLangue, Langue) )
+  + La jointure n'est pas naturelle dans ce cas car il n'y a pas de lien entre les tables (fk)
   
 ### Q3.
-  +
+  + R' = SELECTION(dDemande='2019-10-30', Securite)
 
 ### Q4.
  + R' = PROJECTION (Langage, ALIAS(cLangue/Langage, Langue) )
