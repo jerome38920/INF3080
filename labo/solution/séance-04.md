@@ -4,7 +4,7 @@
   + R' = PROJECTION(cUsager, JOINTURE_NATURELLE(JOINTURE_NATURELLE(Connexion,Session),Usager))
   
 ### Q2.
-  +
+  + R' = PROJECTION(SELECTION( JOINTURE(Historique,pLangue=pLangue, Langue), cLanguage='Francais'), cLanguage)
   
 ### Q3.
   +
