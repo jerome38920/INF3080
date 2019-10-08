@@ -3,7 +3,7 @@
  - demander une permission pour l'utilisation de ce matériel;
  - fournir la raison de son usage;
 
-# Séance 4: Algèbre relationnelle
+# Séance 4: Langage SQL
 
 - Objectif : Expérimenter le DDL, DML, TCL 
    
