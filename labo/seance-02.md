@@ -1,5 +1,7 @@
 ##### Droits d'auteur :copyright: matériel protégé 
- - Si vous n'êtes pas un étudiant du cours INF3080-030 A2019 vous devez demander une permission pour l'utilisation de ce matériel.
+ Si vous n'êtes pas étudiant du cours INF3080-030 A2019 vous devez 
+ - demander une permission pour l'utilisation de ce matériel;
+ - fournir la raison de son usage;
 
 # Séance 2: Modélisation conceptuelle, ssh, nano, sqlplus
 
