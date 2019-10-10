@@ -3,7 +3,7 @@
  - demander une permission pour l'utilisation de ce matériel;
  - fournir la raison de son usage;
 
-# Séance 6: Langage SQL
+# Séance 6: Langage SQL - DML, TCL
 
 - Objectif : Expérimenter le DDL, DML, TCL 
    
@@ -31,48 +31,35 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 ## 0 - Directives
 
 + Faites le maximum selon vos connaissances;
-+ Lire l'atelier completement;
++ Lire l'atelier complètement;
++ Ce devoir est la suite du devoir précédent;
 + Débuter le devoir;
++ Je vais vérifier (lire) les devoirs;
 
 ## 1 - Création de vues (view)
 
 Vous devez créer des vues qui nous aideront à lister les objets contenus dans votre schéma (lié à
-votre identifiant). Coder les réponses dans un script nommé `01_systeme.sql`.
+votre identifiant). Coder les réponses dans un script nommé `02_systeme.sql`.
 
 + a) Lister les tables dans v_tables(nom);
 + b) Lister les tables et les vues dans v_objets(nom, type);
 + c) Modifier v_tables afin d'ajouter le nombre de lignes (tuples) de la table;
 + d) Quel est le prérequis pour obtenir le nombre de tuples;
 
-## 2 - Création du script (à partir du modele gestion des accès)
-
-Vous devez créer le schéma à partir du modèle relationnel [modèle A](./modele.png).  Votre script
-sera nommé `02_schema.sql`.
-
-+ a) Créer les tables avec les attributs;
-+ b) Ne pas ajouter les clés à ce moment;
-
-## 3 - Insertion de données
+## 2 - Insertion de données
 
 Vous devez créer un fichier nommé `03_insert.sql` qui ajoute pour chacune des tables, au moins 3 tuples.
 
-## 4 - Modification du schéma
 
-Vous devez ajouter les clés primaires pour chacune des tables à l'aide de la commande ALTER TABLE. Vos
-commandes seront ajoutées au fichier `04_alter.sql`.
-
-+ a) faites les ajouts de clés;
-+ b) ajouter au moins 1 enregistrement dans chacune des tables;
-
-## 5 - Validation (test)
+## 3 - Validation (test)
 
 Assurez-vous que tous vos fichiers sont complets et bien sauvegardés. Vous devez fermer toutes vos 
 sessions SQL*plus. Relancer SQL*plus.  Par la suite, vous devez valider que les tables ont le nombre
 de lignes en fonction des insertions.  Est-ce que vos vues sont toujours valides?  Avez-vous des 
 problèmes avec vos objets? Tous vos tests seront codés et sauvegardés dans un fichier nommé 
-`05_test.sql`.
+`04_test.sql`.
 
-## 6 Exécution totale
+## 4 Exécution totale
 
 Vous devez exécuter tous les scripts que vous avez créés.  Ils devront être exécutés dans l'ordre
 au moins deux fois.  Vous ne devez pas avoir d'erreur à la suite des deux exécutions successives.
