@@ -36,7 +36,7 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 ## 1 - Création du script (à partir du modèle gestion des accès)
 
-Vous devez créer le schéma à partir du modèle relationnel (modèle entité association) [modèle A](./modele.png).  Votre script
+Vous devez créer le schéma à partir du modèle relationnel (modèle entité association) [modèle A](./modele_labo.png).  Votre script
 sera nommé `00_schema.sql`.  Ce script vous permettera de créer les objets nécéssaire pour opérationnalisé une BD performante.
 
 + a) Créer les tables avec les attributs;
@@ -53,4 +53,5 @@ sera nommé `00_schema.sql`.  Ce script vous permettera de créer les objets né
 ### FIN.
 
 ---
-Auteur Guy Francoeur, version A2019
+
+Auteur Guy Francoeur :copyright: version A2019
