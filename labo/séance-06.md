@@ -3,7 +3,7 @@
  - demander une permission pour l'utilisation de ce matériel;
  - fournir la raison de son usage;
 
-# Séance 4: Langage SQL
+# Séance 6: Langage SQL
 
 - Objectif : Expérimenter le DDL, DML, TCL 
    
@@ -39,12 +39,12 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 Vous devez créer des vues qui nous aideront à lister les objets contenus dans votre schéma (lié à
 votre identifiant). Coder les réponses dans un script nommé `01_systeme.sql`.
 
-+ a) lister les tables dans v_tables(nom);
-+ b) lister les tables et les vues dans v_objets(nom, type);
-+ c)  modifier v_tables afin d'ajouter le nombre de lignes (tuples) de la table;
++ a) Lister les tables dans v_tables(nom);
++ b) Lister les tables et les vues dans v_objets(nom, type);
++ c) Modifier v_tables afin d'ajouter le nombre de lignes (tuples) de la table;
 + d) Quel est le prérequis pour obtenir le nombre de tuples;
 
-## 2 - Creation du modèle de gestion des accès
+## 2 - Création du script (à partir du modele gestion des accès)
 
 Vous devez créer le schéma à partir du modèle relationnel [modèle A](./modele.png).  Votre script
 sera nommé `02_schema.sql`.
