@@ -84,4 +84,6 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  - [The Entity-Relationship Model-Toward a Unified View of Data, Peter Chen, 1976](http://www.inf.unibz.it/~nutt/IDBs1011/IDBPapers/chen-ER-TODS-76.pdf)
  - [A preliminary framework for entity relationship models, Peter Chen, 1983](http://bit.csc.lsu.edu/~chen/pdf/framework.pdf)
  - Oracle technet
+   + [Oracle Database Doc 11g v11.2](https://docs.oracle.com/cd/E11882_01/nav/portal_4.htm)
+   + [SQL*plus Quick Reference 11g v11.2](https://docs.oracle.com/cd/E11882_01/server.112/e16605/toc.htm#i772678)
  - Robert Godin, UQAM, Professeur
