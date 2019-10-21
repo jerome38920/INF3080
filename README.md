@@ -51,8 +51,8 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 ### Modalités d'évaluation proposées 
 
 #### Examens
- + Examen Intra (#1) : 30%, 26 octobre 2019 de 14:00 à 17:00
- + Examen Final (#2) : 30%, 14 décembre 2019 de 14:00 à 17:00
+ + Examen Intra (#1) : 30%, 26 octobre 2019 de 14:00 à 17:00 **PK1350 et PK1630**
+ + Examen Final (#2) : 30%, 14 décembre 2019 de 14:00 à 17:00 **à venir**
 
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
