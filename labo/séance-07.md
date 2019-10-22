@@ -53,7 +53,7 @@ incrémentales.
 + g) Écrire une requête qui change les mots de passe qui ont moins de 8 caractères vers un mot de 8 ou plus caractères;
 + h) Écrire une requête qui ajoute une règle qui invalide les cPassword de moins de 8 caractères; 
 + i) Écrire une requête qui ajoute un tuples dans Connexion avec moins de 8 caractères;
-+ j) Lister un sommaire en deux tuples : le nombre de tuples qui ont moins 7 caractères UNION le nombre de tuples avec 8 caractères contenu dans Connexion(cPassword);
++ j) Lister un sommaire en deux tuples : le nombre de tuples qui ont moins 7 caractères UNION le nombre de tuples avec 8 caractères ou plus dans Connexion(cPassword);
 + h) Saugarger vos tuples et votre script.
 
 ## 2 - Exécution de votre script
