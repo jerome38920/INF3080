@@ -13,13 +13,21 @@ SELECT COUNT(*) as total, cIP, cLangue FROM Historique h, Langue l
 WHERE h.pLangue = l.pLangue 
 GROUP BY cIP,pLangue ORDER BY cLangue;
 
+g)
+UPDATE Connexion SET cPassword = 'CeciEstUnBonMotDePasse?' WHERE LENGTH(cPassword) < 8;
 
-UPDATE Connexion SET cPassword = 'CeciEstUnBonMotDePasse?' WHERE LEN(cPassword) < 8;
+h)
+ALTER TABLE Connexion ADD CONSTRAINT mdp_tres_secure CHECK (LENGTH(cPassword) > 8);
 
-
-ALTER TABLE Connexion ADD CONSTRAINT mdp_tres_secure CHECK (LEN(cPassword) > 8);
-
+i)
 -- insert into, ca devrait marquer une erreur !
 
-
-SELECT COUNT(*) FROM Connexion WHERE LEN(cPassword) < 7 UNION SELECT COUNT(*) FROM Connexion WHERE LEN(cPassword) = 8;
+j)
+ SELECT COUNT(*), '< 8' as type 
+ FROM Connexion HAVING LENGTH(cPassword) < 8 
+UNION 
+ SELECT COUNT(*), '> 8'
+ FROM Connexion HAVING LENGTH(cPassword) >= 8;
+ 
+k)
+commit;
