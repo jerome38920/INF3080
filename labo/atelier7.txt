@@ -1,10 +1,12 @@
-SELECT pLangue FROM Langue MINUS (SELECT pLangue FROM XSession);
+a) ...
 
-CREATE UNIQUE INDEX unique_index_courriel ON Usager(cCourriel);
+b) commit;
 
+c) DELETE FROM Langue WHERE pLangue IN (SELECT pLangue FROM Langue MINUS (SELECT pLangue FROM XSession));
 
-ALTER TABLE Usager ADD COLUMN cImpair VARCHAR(50);
-UPDATE Usager SET cImpair = 'Impair' WHERE MOD(pUsager,2) <> 0;
+d) CREATE UNIQUE INDEX unique_index_courriel ON Usager(cCourriel);
+
+e) UPDATE Usager SET cUsager = cUsager||'Impair' WHERE MOD(pUsager,2) <> 0;
 
 
 SELECT COUNT(*) as total FROM Historique GROUP BY cIP,pLangue ORDER BY cLangue;
