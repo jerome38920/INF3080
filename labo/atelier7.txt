@@ -8,8 +8,10 @@ d) CREATE UNIQUE INDEX unique_index_courriel ON Usager(cCourriel);
 
 e) UPDATE Usager SET cUsager = cUsager||'Impair' WHERE MOD(pUsager,2) <> 0;
 
-
-SELECT COUNT(*) as total FROM Historique GROUP BY cIP,pLangue ORDER BY cLangue;
+f) 
+SELECT COUNT(*) as total, cIP, cLangue FROM Historique h, Langue l 
+WHERE h.pLangue = l.pLangue 
+GROUP BY cIP,pLangue ORDER BY cLangue;
 
 
 UPDATE Connexion SET cPassword = 'CeciEstUnBonMotDePasse?' WHERE LEN(cPassword) < 8;
