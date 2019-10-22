@@ -1,0 +1,21 @@
+SELECT pLangue FROM Langue MINUS (SELECT pLangue FROM XSession);
+
+CREATE UNIQUE INDEX unique_index_courriel ON Usager(cCourriel);
+
+
+ALTER TABLE Usager ADD COLUMN cImpair VARCHAR(50);
+UPDATE Usager SET cImpair = 'Impair' WHERE MOD(pUsager,2) <> 0;
+
+
+SELECT COUNT(*) as total FROM Historique GROUP BY cIP,pLangue ORDER BY cLangue;
+
+
+UPDATE Connexion SET cPassword = 'CeciEstUnBonMotDePasse?' WHERE LEN(cPassword) < 8;
+
+
+ALTER TABLE Connexion ADD CONSTRAINT mdp_tres_secure CHECK (LEN(cPassword) > 8);
+
+-- insert into, ca devrait marquer une erreur !
+
+
+SELECT COUNT(*) FROM Connexion WHERE LEN(cPassword) < 7 UNION SELECT COUNT(*) FROM Connexion WHERE LEN(cPassword) = 8;
