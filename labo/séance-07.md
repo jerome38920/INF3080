@@ -39,20 +39,24 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 ## 1 - Création de requêtes SQL pour Oracle
 
 Vous devez créer un script  nommé `labo07.sql` qui qui contiendra les réponses pour toutes les questions qui suivent.
-Vous devez pour ce travail utiliser le schéma de base de données [modèle A](./modele_labo.png).
+Vous devez pour ce travail utiliser le schéma de base de données [modèle A](./modele_labo.png). Les modifications sont
+incrémentales.
 
 ![modèle A](./modele_labo.png)
 
-+ a) Écrire une requête qui efface la plus petite pLangue qui n'est pas dans une relation (qui n'est pas un clé étrangère);
-+ b) 
-+ c) 
-+ d) 
-+ e)
-+ f)
++ a) Assurez-vous d'avoir des tuples dans chacune des tables (environ 7+);
++ b) Il faut sauvegarder vos changements dans la BD;
++ c) Écrire une requête qui efface la plus petite pLangue qui n'est pas dans une relation (qui n'est pas une clé étrangère);
++ d) Écrire une requête qui crée un index unique sur le courriel afin de valider que le courriel est unique;
++ e) Écrire une requête qui modifie les tuples impairs de la table en ajoutant '(I)' à cUsager de la table Usager; 
++ f) Écrire une requête qui compte le nombre de fois qu'un IP par cLangue c'est connecté au système et ceci ordonné par cLangue;
++ g) Écrire une requete qui change les mots de passe qui ont moins de 8 caractères vers un mot de 8 ou plus caractères;
++ h) Ecrire une règle qui ajoute une règle qui invalide les cPassword de moins de 8 caractères; 
++ i) 
 
 ## 2 - Exécution de vitre script
 
-+ Q1. Comment est possible d'exécuter un script dans SQL*plus ?
++ Q1. Comment est-ce possible d'exécuter un script dans SQL*plus ?
 
 ### FIN.
 
