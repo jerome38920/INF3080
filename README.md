@@ -27,32 +27,33 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 +  7 : Le langage SQL
    - partie DML (INSERT, DELETE, UPDATE)
    - partie TCL (COMMIT, ROLLBACK, ...)
-   
 +  8 : Le langage SQL et les requêtes avancées
-   - filtre, jonction, groupement, sous-requête
+   - filtre, joncture, groupement, sous-requête
+   
++  9 : La programmation PL/SQL pour la création de gâchettes
    - Initiation au PL/SQL et les fonctions
-
-+ 9 : La programmation PL/SQL pour la création de gâchettes
 + 10 : La programmation PL/SQL pour la création de procédures et packages
 + 11 : La programmation PL/SQL Les curseurs
 + 12 : Droits et sécurité des objets
-  - partie DCL (GRANT, REVOKE)
+   - partie DCL (GRANT, REVOKE)
 + 13 : Introduction à SQL*Net et les connecteurs
    - Connectivité à partir d'une application distante
    - Les applications 2-tiers vs 3-tiers
 + 14 : Coût et optimisation de requêtes
-  - Explain plan
-  - Les indexes vs table scan
+   - Explain plan
+   - Les indexes vs table scan
 + 15 : Introduction et théorie des entrepôts de données
-  - Schéma en étoile, table maître et table de faits, modélisation
+   - Schéma en étoile, table maître et table de faits, modélisation EDW
 
 + Bravo, fin de session.
 
 ### Modalités d'évaluation proposées 
 
 #### Examens
- + Examen Intra (#1) : 30%, 26 octobre 2019 de 14:00 à 17:00 **PK1350 et PK1630**
- + Examen Final (#2) : 30%, 14 décembre 2019 de 14:00 à 17:00 **à venir**
+ - Examen Intra (#1) : 30%, 26 octobre 2019 de 14:00 à 17:00 
+   + **PK1350** [ AAAA @ LAMA ]
+   + **PK1630** [ LEYN @ ZZZZ ]
+ - Examen Final (#2) : 30%, 14 décembre 2019 de 14:00 à 17:00 **à venir**
 
 ##### Directives aux examens
  + Avoir votre carte d'étudiant UQAM valide;
@@ -65,7 +66,10 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + Répondre dans les espaces prévus;
  + Vous avez trois (3) heures;
  + **Signez la feuille de présence avant votre départ.**
- 
+
+#### Ateliers (laboratoires) :
+ + Il n'y a pas de séance de laboratoire la semaine suivant l'examen.
+
 #### Travaux :
  + Travail pratique #1 : modélisation et construction 15% [ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp1.md)
  + Travail pratique #2 : Implémentation et optimisation 25%
@@ -87,3 +91,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
    + [Oracle Database Doc 11g v11.2](https://docs.oracle.com/cd/E11882_01/nav/portal_4.htm)
    + [SQL*plus Quick Reference 11g v11.2](https://docs.oracle.com/cd/E11882_01/server.112/e16605/toc.htm#i772678)
  - Robert Godin, UQAM, Professeur
+ 
+ ---
+ 
+ Auteur Guy Francoeur :copyright: 2019
