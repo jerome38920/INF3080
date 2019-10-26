@@ -2,7 +2,21 @@ a) ...
 
 b) commit;
 
-c) DELETE FROM Langue WHERE pLangue IN (SELECT pLangue FROM Langue MINUS (SELECT pLangue FROM XSession));
+c)
+ --C<est bien, pas sure que c<est complet, compléter ... 
+ DELETE FROM Langue WHERE pLangue IN (SELECT pLangue FROM Langue MINUS (SELECT pLangue FROM XSession UNION SELECT DISTINCT pLangue FROM Usager));
+ 
+ 
+c') 
+ DELETE FROM Langue 
+ WHERE pLangue IN 
+ (
+ SELECT MIN(pLangue) FROM Langue 
+ WHERE NOT IN (SELECT DISTINCT pLangue FROM XSession 
+         UNION SELECT DISTINCT pLangue FROM Usager)
+ );
+ 
+ ROLLBACK;
 
 d) CREATE UNIQUE INDEX unique_index_courriel ON Usager(cCourriel);
 
