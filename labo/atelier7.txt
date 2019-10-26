@@ -4,7 +4,11 @@ b) commit;
 
 c)
  --C'est bien, pas sure que c'est complet, compléter ... 
- DELETE FROM Langue WHERE pLangue IN (SELECT pLangue FROM Langue MINUS (SELECT pLangue FROM XSession UNION SELECT DISTINCT pLangue FROM Usager));
+ DELETE FROM Langue WHERE pLangue IN (
+  SELECT pLangue FROM Langue 
+  MINUS 
+  SELECT pLangue FROM XSession UNION SELECT DISTINCT pLangue FROM Usager
+ );
  
  
 c') 
