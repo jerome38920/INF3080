@@ -28,22 +28,25 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
    - partie DML (INSERT, DELETE, UPDATE)
    - partie TCL (COMMIT, ROLLBACK, ...)
 +  8 : Le langage SQL et les requêtes avancées
-   - filtre, joncture, groupement, sous-requête
+   - filtre, jointure, groupement, sous-requête
    
-+  9 : La programmation PL/SQL pour la création de gâchettes
-   - Initiation au PL/SQL et les fonctions
-+ 10 : La programmation PL/SQL pour la création de procédures et packages
-+ 11 : La programmation PL/SQL Les curseurs
-+ 12 : Droits et sécurité des objets
++  9 : Initiation au PL/SQL 
+   - Création de fonctions, procédures, packages, gachettes
+   - Le langage PL/SQL, sections et blocs, variables et affectations, gestion des erreurs
++ 10 : La programmation PL/SQL avancé
+   - Les curseurs
+   - Les boucles
++ 11 : Droits et sécurité des objets
    - partie DCL (GRANT, REVOKE)
-+ 13 : Introduction à SQL*Net et les connecteurs
++ 12 : Introduction à SQL*Net et les connecteurs
    - Connectivité à partir d'une application distante
    - Les applications 2-tiers vs 3-tiers
-+ 14 : Coût et optimisation de requêtes
++ 13 : Coût et optimisation de requêtes
    - Explain plan
    - Les indexes vs table scan
-+ 15 : Introduction et théorie des entrepôts de données
++ 14 : Introduction et théorie des entrepôts de données
    - Schéma en étoile, table maître et table de faits, modélisation EDW
++ 15 : Bonus
 
 + Bravo, fin de session.
 
