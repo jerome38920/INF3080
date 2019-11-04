@@ -36,16 +36,17 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 + Débuter le devoir;
 + Je vais vérifier (lire) les devoirs;
 
-## 1 - Création de requêtes SQL pour Oracle
-
-Vous devez créer un script  nommé `labo07.sql` qui contiendra les réponses pour toutes les questions qui suivent.
-Vous devez pour ce travail utiliser le schéma de base de données [modèle A](./modele_labo.png). Les modifications sont
-incrémentales.
-
 ![modèle A](./modele_labo.png)
 
-+ a) Assurez-vous d'avoir des tuples dans chacune des tables (environ 7+);
-+ b) Il faut sauvegarder vos changements dans la BD;
+Vous devez créer un script  nommé `labo07.sql` qui contiendra les réponses pour toutes les questions des exercices qui suivent.
+Vous devez pour ce travail utiliser le schéma de base de données [modèle A](./modele_labo.png).
+
+## 1 - Création de requêtes SQL pour Oracle
+
+ Veuillez pour chacune des questions écrire les instructions nécessaire. Les modifications sont incrémentales.
+
++ a) Créer ou assurez-vous d'avoir des tuples dans chacune des tables (minimum 6 tuples);
++ b) Sauvegarder vos changements dans la BD;
 + c) Écrire une requête qui efface la plus petite pLangue qui n'est pas dans une relation (qui n'est pas une clé étrangère);
 + d) Écrire une requête qui crée un index unique sur le courriel afin de valider que le courriel est unique;
 + e) Écrire une requête qui modifie les tuples impairs de la table en ajoutant '(impair)' à Usager(cUsager); 
@@ -54,7 +55,8 @@ incrémentales.
 + h) Écrire une requête qui ajoute une règle qui invalide les cPassword de moins de 8 caractères; 
 + i) Écrire une requête qui ajoute un tuples dans Connexion avec moins de 8 caractères;
 + j) Lister un sommaire en deux tuples : le nombre de tuples qui ont moins 7 caractères UNION le nombre de tuples avec 8 caractères ou plus dans Connexion(cPassword);
-+ h) Saugarger vos tuples et votre script.
++ h) Saugarger vos tuples
++ Sauvegarder votre script.
 
 ## 2 - Exécution de votre script
 
