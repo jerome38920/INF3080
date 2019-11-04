@@ -39,7 +39,7 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 ![modèle A](./modele_labo.png)
 
-Vous devez créer un script  nommé `labo08.sql` qui contiendra les réponses pour toutes les questions qui suivent.
+Vous devez créer un script  nommé `labo08.sql` qui contiendra les réponses pour toutes les exercices qui suivent.
 Vous devez pour ce travail utiliser le schéma de base de données [modèle A](./modele_labo.png). Les modifications sont
 incrémentales. Il faut sauvegarder vos changements dans la BD.
 
