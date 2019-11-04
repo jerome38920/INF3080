@@ -48,7 +48,8 @@ incrémentales. Il faut sauvegarder vos changements dans la BD.
 
 Vous devez créer des gachettes qui sont en mesure de faire le travail de gestion des clés (auto incréments) de toutes les tables.  
 
-+ Q1. À quoi ressemble l'insertion avant et après la création d'une gachette sur la table `Usager` ?  
+### Questions :
+ + Q1. À quoi ressemble l'insertion avant et après la création d'une gachette sur la table `Usager` ?  
 
 ## 2 - Procédure
 
@@ -56,17 +57,21 @@ Vous devez faire un programme qui ajoute un usager dans le système (la BD).  Le
 
 + p_ajout_usager(cUsager, cRue, cMobile, cPassword, cCourriel, pLangue);
 
-Q1. Quelle commande permet de tester la procédure ?
-Q2. Est-ce possible de faire du TCL dans une procédure ?
+### Questions :
+
+ + Q1. Quelle commande permet de tester la procédure ?
+ + Q2. Est-ce possible de faire du TCL dans une procédure ?
 
 ## 3 - Procédure, fonction et gachette
 
 Vous devez construire une procédure nommée `p_change_pw(cOldPW, cNewPW, pUsager, cIP, cBrowser);`  Celle-ci devra valider que le vieux
 password est conforme (via une fonction).  Elle devra aussi ajouter à la table `Securite` la demande de changement (via une gachette).
 
-+ Q1. Quelle est la signature (prototype) de votre fonction ?
-+ Q2. Quel est le nom (significatif) de votre gachette ?
-+ Q3. Est-ce possible de faire du TCL dans une gachette ?
+### Questions :
+
+ + Q1. Quelle est la signature (prototype) de votre fonction ?
+ + Q2. Quel est le nom (significatif) de votre gachette ?
+ + Q3. Est-ce possible de faire du TCL dans une gachette ?
 
 **NOTE** je peux savoir seulement avec le nom que vous avez compris ou pas.
 
@@ -75,8 +80,10 @@ password est conforme (via une fonction).  Elle devra aussi ajouter à la table 
 Dans la procédure (ou autres programmes) il est nécessaire d'ajouter une gestion des erreurs pour garder la base de données consistante.
 Faire les changements nécessaires pour avec un nouveau CREATE qui remplacera le code fait au numéro #3.
 
-+ Q1. Avec quelle commande est-il possible d'écraser du code dans la BD ?
-+ Q2. Comment est-ce possible d'annuller une action (une transaction) dans une gachette ?
+### Questions :
+
+ + Q1. Avec quelle commande est-il possible d'écraser du code dans la BD ?
+ + Q2. Comment est-ce possible d'annuller une action (une transaction) dans une gachette ?
 
 ### FIN.
 
