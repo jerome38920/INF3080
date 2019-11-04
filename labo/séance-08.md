@@ -46,7 +46,7 @@ incrémentales. Il faut sauvegarder vos changements dans la BD.
 
 ## 1 - Gachette et Sequence
 
-Vous devez créer des gachettes qui sont en mesure de faire le travail de gestion des clés de toutes les tables.  
+Vous devez créer des gachettes qui sont en mesure de faire le travail de gestion des clés (auto incréments) de toutes les tables.  
 
 + Q1. À quoi ressemble l'insertion avant et après la création d'une gachette sur la table `Usager` ?  
 
