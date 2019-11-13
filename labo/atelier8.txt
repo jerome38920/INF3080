@@ -1,0 +1,78 @@
+-- Sequence creation
+CREATE SEQUENCE SEQ_Langue
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+CACHE 20;
+  
+-- Trigger creation
+CREATE OR REPLACE TRIGGER pLangue_Langue
+	BEFORE INSERT ON LANGUE
+	FOR EACH ROW
+BEGIN
+	SELECT SEQ_Langue.NEXTVAL INTO :new.pLangue FROM DUAL;
+END;
+
+-- Q1.1) 
+-- Insertion avant gachette
+INSERT INTO Usager(pUsager, cUsager, pLangue, cRue, cMobile, bActif) VALUES (1, 'Tomas', 1, '9999 Ontario E.', '+1-000-000-0000', 1);
+
+-- Insertion apres gachette
+INSERT INTO Usager(cUsager, pLangue, cRue, cMobile, bActif) VALUES ('Tomas', 1, '9999 Ontario E.', '+1-000-000-0000', 1);
+-- La difference est que le champ pUsager est gere par le systeme ("automatiquement" via le combo trigger + sequence)
+
+
+-- Q2)
+
+CREATE OR REPLACE PROCEDURE
+ p_ajout_usager(_cUsager IN VARCHAR(50), _cRue IN VARCHAR(200), _cMobile IN VARCHAR(50), 
+ _cPassword IN VARCHAR(64), _cCourriel IN VARCHAR(200), _pLangue IN NUMBER);
+IS
+ -- Recuperer la cle primaire Usager
+ vpUsager NUMBER;
+BEGIN
+	-- On assume aussi que le trigger sur Usager existe (on vient de le creer)
+	-- On assume que l'usager n'existe pas: on ne gere pas le replacement
+	INSERT INTO Usager(cUsager, pLangue, cRue, cMobile, bActif) 
+	VALUES (_cUsager, _pLangue, _cRue, _cMobile, 1)
+	RETURNING pUsager INTO vpUsager; -- cle primaire
+	-- On assume que Connection possede un trigger et une sequence pour auto-increment pConnection
+	INSERT INTO Connection(cCourriel, cPassword, pUsager) VALUES (_cCourriel, _cPassword, vpUsager);
+
+END p_ajout_usager;
+
+-- Q2.1) EXECUTE p_ajout_usager('Tomas', '9999 Ontario E.', '+1-000-000-0000', 'moncourriel@gmail.com', 'monPasswordSecure++', 1);
+
+-- Q2.2) Oui, on peut faire une transaction et un ROLLBACK si une erreur arrive
+-- SAVEPOINT avant_ajout_user au debut + block EXCEPTION WHEN OTHERS avec ROLLBACK TO avant_ajout_user;
+
+
+-- Q3)
+
+-- NOTA : ceci reste a finir
+
+CREATE OR REPLACE PROCEDURE
+ p_change_pw(_cOldPW IN VARCHAR(200), _cNewPW IN VARCHAR(200), _pUsager IN NUMBER, _cIP IN VARCHAR(50), _cBrowser IN VARCHAR(200));
+IS
+	vcOldPassword VARCHAR(50);
+BEGIN
+	SELECT pUsager INTO vcOldPassword FROM Connexion WHERE pUsager = _pUsager AND cPassword = _cOldPW;
+	IF pUsager <> NULL
+		-- validation de MDP
+		UPDATE Connexion SET cPassword = '';
+		-- ceci declenche le trigger
+	END IF;
+END p_change_pw;
+
+
+CREATE OR REPLACE TRIGGER updatePassword_Securite
+BEFORE UPDATE ON Connexion
+FOR EACH ROW
+BEGIN
+	IF :old.cPassword <> :new.cPassword
+		-- On assume que le trigger existe (pSecurite)
+		INSERT INTO Securite(cSecurite, dDemande, cIP, cBrowser, pUsager)
+		VALUES ('Changement de MDP', NOW(), '????', '????', :old.pUsager);
+	END IF;
+END;
+
