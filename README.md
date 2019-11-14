@@ -29,7 +29,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
    - partie TCL (COMMIT, ROLLBACK, ...)
 +  8 : Le langage SQL et les requêtes avancées
    - filtre, jointure, groupement, sous-requête
-   
++ mi-session (examen intra)
 +  9 : Initiation au PL/SQL 
    - Création de fonctions, procédures, packages, gachettes
    - Le langage PL/SQL, sections et blocs, variables et affectations, gestion des erreurs
@@ -41,6 +41,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 + 12 : Introduction à SQL*Net et les connecteurs
    - Connectivité à partir d'une application distante
    - Les applications 2-tiers vs 3-tiers
+   - Oracle SQL*Loader (voir références)
 + 13 : Coût et optimisation de requêtes
    - Explain plan
    - Les indexes vs table scan
@@ -75,8 +76,8 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + Il n'y a pas de séance de laboratoire la semaine suivant l'examen.
 
 #### Travaux :
- + Travail pratique #1 : modélisation et construction 15% [click ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp1.md)
- + Travail pratique #2 : construction, implémentation et optimisation 25% [click ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp2.md)
+ + Travail pratique #1 : modélisation et construction 15% [clic ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp1.md)
+ + Travail pratique #2 : construction, implémentation et optimisation 25% [clic ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp2.md)
  
 ##### Directives des travaux :
  + Remise électronique (privé) via GitHub.com
@@ -94,6 +95,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  - Oracle technet
    + [Oracle Database Doc 11g v11.2](https://docs.oracle.com/cd/E11882_01/nav/portal_4.htm)
    + [SQL*plus Quick Reference 11g v11.2](https://docs.oracle.com/cd/E11882_01/server.112/e16605/toc.htm#i772678)
+   + [SQL Loader par Vanish Kapoor (2018)](https://www.foxinfotech.in/2018/07/using-sql-loader-in-oracle-to-import-csv-file.html)
  - Robert Godin, UQAM, Professeur
  
  ---
