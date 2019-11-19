@@ -11,7 +11,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 
 ### Plan de cours
 +  1 : Introduction aux systèmes de gestion de bases de données (nom, type, rôle et environnement)
-   - Neo4J, SQLite, SQL Server, Oracle, PostgreSQL, Kyoto Cabinet
+   - Neo4J, SQLite, SQL Server, Oracle (Oracle Database), PostgreSQL, Kyoto Cabinet
 +  2 : Introduction au modèle conceptuel entité-association
    - notation hongroise, type de données
 +  3 : Introduction au modèle relationnel
@@ -20,7 +20,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 +  4 : Introduction à l'algèbre relationnelle
 +  5 : Introduction à Oracle et SQL*plus dans un environnement Linux
    - connexion, commandes de base, scripts
-   - Les objets système du SGBDR Oracle
+   - Les objets système du SGBDR Oracle Database
    - La requête la plus simple : SELECT * FROM DUAL;
 +  6 : Le langage SQL partie DDL (CREATE, DROP, ALTER) 
    - table, view, index, sequence, contrainte, intégrité
@@ -36,12 +36,13 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 + 10 : La programmation PL/SQL avancé
    - Les curseurs
    - Les boucles
-+ 11 : Droits et sécurité des objets
++ 11 : Jointures modernes et sécurité des objets
+   - Les jointures mordernes (théorie des ensembles)
    - partie DCL (GRANT, REVOKE)
 + 12 : Introduction à SQL*Net et les connecteurs
    - Connectivité à partir d'une application distante
    - Les applications 2-tiers vs 3-tiers
-   - Oracle SQL*Loader (voir références)
+   - Import de fichiers CSV/TSV Oracle SQL*Loader (voir références)
 + 13 : Coût et optimisation de requêtes
    - Explain plan
    - Les indexes vs table scan
@@ -80,7 +81,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  + Travail pratique #2 : construction, implémentation et optimisation 25% [clic ici](https://github.com/guyfrancoeur/INF3080_A2019_TP/blob/master/tp2.md)
  
 ##### Directives des travaux :
- + Remise électronique (privé) via GitHub.com
+ + Remise électronique **privé** via GitHub.com
 
 ##### Points bonus :
  + Il est possible d'obtenir des points pour des contributions extraordinaires;
