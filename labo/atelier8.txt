@@ -49,30 +49,84 @@ END p_ajout_usager;
 
 -- Q3)
 
--- NOTA : ceci reste a finir
-
+-- Procedure de remplacement de mot de passe
 CREATE OR REPLACE PROCEDURE
  p_change_pw(_cOldPW IN VARCHAR(200), _cNewPW IN VARCHAR(200), _pUsager IN NUMBER, _cIP IN VARCHAR(50), _cBrowser IN VARCHAR(200));
 IS
-	vcOldPassword VARCHAR(50);
+	vpUsager NUMBER;
+	vMdpCheck NUMBER;
 BEGIN
-	SELECT pUsager INTO vcOldPassword FROM Connexion WHERE pUsager = _pUsager AND cPassword = _cOldPW;
-	IF pUsager <> NULL
+	SELECT pUsager INTO vpUsager FROM Connexion WHERE pUsager = _pUsager AND cPassword = _cOldPW;
+	IF pUsager <> NULL THEN
 		-- validation de MDP
-		UPDATE Connexion SET cPassword = '';
-		-- ceci declenche le trigger
+		vMdpCheck = f_verifierMdp(_cNewMdp, _cOldPW);
+		IF vMdpCheck <> 0 THEN
+			UPDATE Connexion SET cPassword = _cNewPW WHERE pUsager = _pUsager;
+			-- ceci declenche le trigger
+			
+		END
 	END IF;
 END p_change_pw;
 
+-- Fonction de verification du mot de passe
+CREATE OR REPLACE FUNCTION f_verifierMdp(_cNewMdp IN VARCHAR(200), _cOldPW IN VARCHAR(200)) RETURN NUMBER 
+IS
+	vIsValid NUMBER;
+BEGIN
+	-- si +8 characteres et different du mdp courrant
+	IF LEN(_cNewMdp) >= 8 AND _cNewMdp <> _cOldPW THEN
+		vIsValid = 1;-- valide
+	ELSE
+		vIsValid = 0;-- invalide
+	END IF;
+	RETURN vIsValid;
+END; 
 
-CREATE OR REPLACE TRIGGER updatePassword_Securite
+-- Gachette de journalisation
+CREATE OR REPLACE TRIGGER tbu_Connexionq
 BEFORE UPDATE ON Connexion
 FOR EACH ROW
 BEGIN
 	IF :old.cPassword <> :new.cPassword
+		SELECt cIp INTO vCip From XSession WHERE pUsager = :old.pUsager;
 		-- On assume que le trigger existe (pSecurite)
 		INSERT INTO Securite(cSecurite, dDemande, cIP, cBrowser, pUsager)
-		VALUES ('Changement de MDP', NOW(), '????', '????', :old.pUsager);
+		VALUES ('Changement de MDP', NOW(), cIp, '????', :old.pUsager);
+		-- recuperer les valeurs de session ?
 	END IF;
 END;
 
+-- Q4)
+-- modification du code 
+-- Procedure de remplacement de mot de passe
+CREATE OR REPLACE PROCEDURE
+ p_change_pw(_cOldPW IN VARCHAR(200), _cNewPW IN VARCHAR(200), _pUsager IN NUMBER, _cIP IN VARCHAR(50), _cBrowser IN VARCHAR(200));
+IS
+	vpUsager NUMBER;
+	vMdpCheck NUMBER;
+BEGIN
+	SAVEPOINT avant_mise_a_jour_mdp;
+	SELECT pUsager INTO vpUsager FROM Connexion WHERE pUsager = _pUsager AND cPassword = _cOldPW;
+	IF pUsager <> NULL THEN
+		-- validation de MDP
+		vMdpCheck = f_verifierMdp(_cNewMdp, _cOldPW);
+		IF vMdpCheck <> 0 THEN
+			UPDATE Connexion SET cPassword = _cNewPW WHERE pUsager = _pUsager;
+			-- ceci declenche le trigger
+		ELSE
+			RAISE ERROR_INVALID_MDP;
+		END
+	ELSE
+		RAISE ERROR_INVALID_KEY;
+	END IF;
+	EXCEPTION
+		WHEN ERROR_INVALID_KEY THEN
+			raise_application_error (-20001, 'pUsager invalide');
+			ROLLBACK TO avant_mise_a_jour_mdp; -- retourne a l'etat du debut
+		WHEN ERROR_INVALID_MDP THEN
+			raise_application_error (-20003, 'Mot de passe invalide');
+		WHEN OTHERS THEN
+			raise_application_error (-20002, 'Une erreur est survenue.... Too bad...');
+END p_change_pw;
+
+-- ecraser du code : soit DROP PROCEDURE [procedure], soit CREATE OR REPLACE PROCEDURE [procedure]
