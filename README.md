@@ -36,9 +36,10 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
 + 10 : La programmation PL/SQL avancé
    - Les curseurs
    - Les boucles
-+ 11 : Jointures modernes et sécurité des objets
++ 11 : Jointures modernes et gestion des accès aux objets
    - Les jointures mordernes (théorie des ensembles)
    - partie DCL (GRANT, REVOKE)
+   - Les synonymes
 + 12 : Introduction à SQL*Net et les connecteurs
    - Connectivité à partir d'une application distante
    - Les applications 2-tiers vs 3-tiers
