@@ -97,7 +97,7 @@ Modèle entité-association. Modèle relationnel. Algèbre relationnelle et lang
  - Oracle technet
    + [Oracle Database Doc 11g v11.2](https://docs.oracle.com/cd/E11882_01/nav/portal_4.htm)
    + [SQL*plus Quick Reference 11g v11.2](https://docs.oracle.com/cd/E11882_01/server.112/e16605/toc.htm#i772678)
-   + [SQL Loader par Vanish Kapoor (2018)](https://www.foxinfotech.in/2018/07/using-sql-loader-in-oracle-to-import-csv-file.html)
+ - [SQL Loader par Vanish Kapoor (2018)](https://www.foxinfotech.in/2018/07/using-sql-loader-in-oracle-to-import-csv-file.html)
  - Robert Godin, UQAM, Professeur
  
  ---
