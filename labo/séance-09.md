@@ -78,7 +78,7 @@ Vous remarquez que les colonnes date sont étrange, ouille des fois c'est pas be
 ### Questions :
 
  + Q2.  Quelles sont les commandes qui permettent de changer d'usager sans fermer SQL*plus ?
- + Q3.  Pourquoi est-ce utile de créer des synomymes ? ou dans quel cas (élaborer-le) ?
+ + Q3.  Pourquoi est-ce utile de créer des synomymes ? ou dans quel cas (décrivez-le) ?
  + Q4.  Lorsque nous travaillons avec un outils d'import comme SQL*loader que devons-vous garder en tête ?
  + Q5.  Combien de temps a été nécessaire pour faire l'atelier ?
 
