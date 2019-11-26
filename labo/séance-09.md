@@ -54,7 +54,7 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
  votre codeMS dans le nom du synonyme. Une fois ceci fait vous devez créer une vue (view) nommée `v_codems`
  qui utilise les synonymes. Finalement, faire un SELECT sur la vue `v_codeMS`. LE CodeMS est bien sur votre codeMS, pas le mot codeMS.
 
- + Q1. Pourquoi ajouter le codeMS au nom du synonyme ?
+ + Q1. Pourquoi ajouter le/votre `codeMS` au nom du synonyme ?
 
 ## 3 - Remettre tout comme avant !
 
@@ -66,18 +66,19 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 Vous devez créer un nommé `t_commandeE` (t car elle est temporaire) et faire l'import des données qui suivent.
 Les domaines de champs (colonne) sont détectables a l'aide de la notation hongroise et des valeur proposées.
+Garder votre progression dans un script nommé `s09n04.sql`.
 
-| pCommandeE | dCommandeE | nCommande |
+| pCommandeE | dCommandeE | nCommandeE |
 | ---------- | ---------- | --------- |
-| 10         | 2019-30-01 | 90.19 |
-| 20         | 2018-28-02 | 1000.97 |
-| 31         | 2017-15-03 | 1100.02 |
+| 10         | 30-2019-01 | 90.19 |
+| 20         | 28-2018-12 | 1000.97 |
+| 31         | 15-2017-12 | 1100.02 |
 
 ### Questions :
 
  + Q2.  Quelles sont les commandes qui permettent de changer d'usager sans fermer SQL*plus ?
- + Q2.  Combien de temps a été nécessaire pour faire l'atelier ?
- + Q3.  Lorsque nous travaillons avec un outils d'import comme SQL*loader que devons-vous garder en tête ?
+ + Q3.  Combien de temps a été nécessaire pour faire l'atelier ?
+ + Q4.  Lorsque nous travaillons avec un outils d'import comme SQL*loader que devons-vous garder en tête ?
 
 ### FIN.
 
