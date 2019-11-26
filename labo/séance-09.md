@@ -66,6 +66,7 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 Dans la table `Historique` déjà créer vous devez importer les données ci-bas.
 Les domaines de champs (colonne) sont détectables à l'aide de la notation hongroise et des valeur proposées.
+Vous remarquez que les colonnes date sont étrange, ouille des fois c'est pas beau. Rien n'est à votre épreuve. 
 
 
 | pHistorique | dCreation | dExpiration | cIP | pLangue |
