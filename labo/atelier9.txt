@@ -1,0 +1,51 @@
+-- synonymes
+CREATE OR REPLACE public SYNONYM Historique_jk891197 FOR jk891197.Historique;
+CREATE OR REPLACE public SYNONYM Usager_jk891197 FOR jk891197.Usager;
+CREATE OR REPLACE public SYNONYM Connexion_jk891197 FOR jk891197.Connexion;
+-- ...
+
+-- droits
+GRANT ALL PRIVILEGES ON jk891197.Historique TO inf3080b;
+GRANT ALL PRIVILEGES ON jk891197.Connexion TO inf3080b;
+GRANT ALL PRIVILEGES ON jk891197.Usager TO inf3080b;
+-- ...
+
+-- vue+synonyme
+CREATE VIEW v_jk891197 AS SELECT * from Historique_jk891197;
+-- ou CREATE VIEW v_jk891197 AS SELECT * from jk891197.Historique;
+-- select/test
+SELECT * FROM v_jk891197;
+
+-- Q1: le schema inf3080b est commun POUR TOUT LE MONDE, si on ajoute pas le codeMS, 
+-- on ne pourra pas creer un objet deja nomme de cette facon
+
+-- script effacement
+DROP SYNONYM Historique_jk891197;-- FORCE
+DROP SYNONYM Usager_jk891197;-- FORCE
+REVOKE ALL PRIVILEGES ON jk891197.Usager TO inf3080b;
+REVOKE ALL PRIVILEGES ON jk891197.Connexion TO inf3080b;
+DROP VIEW v_jk891197;
+
+
+-- sql loader
+-- alter session set nls_date_format='dd-yyyy-mm';
+-- set numformat 999g999g990d000000
+-- set numformat "" (reset)
+load data
+infile 'atelier9.data.txt'  "fix 5"
+into table Historique
+fields terminated by ',' optionally enclosed by '"'
+(pHistorique number, dCreation date, dExpiration date, cIP varchar(20), pLangue number)
+
+-- Switch connexion dans SQL*plus
+-- connect inf3080b (+password)
+
+-- Utilite des synonymes ?
+-- * Masquer la complexite de la base, partager des informations sans avoir a maintenir les schemas (users).
+-- * Pointer vers des informations/tables/objets differents sans avoir a savoir "lequel" (utilie pour des fonctions,procs)
+
+-- Que faut-il garder en tete ?
+-- * Attention aux formats (nombres, date)
+-- * Rien n'oblige a tout inserer directement dans les tables de prod: on peut utiliser une/plusieurs tables de staging (ex: temp)
+
+
