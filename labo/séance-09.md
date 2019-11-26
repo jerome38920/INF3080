@@ -41,19 +41,28 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 ## 1 - Donner des droits
 
+ Vous devez donner des droits sur des tables de votre schéma à l'usager inf3080b. Utiliser une ou des tables du `modèle A`.
+
 ## 2 - Créer des synonymes
+ Vous devez maintenant utiliser le schéma `inf3080b` et créer des synonymes pour les tables du #1.  ajouter
+ votre codeMS dans le nom du synonyme. Une fois ceci fait vous devez créer une vue (view) nommée `v_codems`
+ qui utilise les synonymes. Finalement, faire un SELECT sur la vue `v_codeMS`. LE CodeMS est bien sur votre codeMS, pas le mot codeMS.
+
+ + Q1. Pourquoi ajouter le codeMS au nom du synonyme ?
 
 ## 3 - Remettre tout comme avant !
 
+ Vous devez créer un script nommé s09_n03.sql qui fera tout ce qui est nécessaire pour remettre le schéma 
+ `inf3080b` dans l'état initial.  Vous ne devez pas effacer les objets de vos collègues.  Vous devez aussi
+ dans le script enlever les droits initialement donnés.
+
 ### Questions :
 
- + Q1.  ?
- + Q2.  ?
+ + Q2.  Quelles sont les commandes qui permettent de changer d'usager sans fermer SQL*plus ?
+ + Q2.  Combien de temps a été nécessaire pour faire l'atelier ?
 
 ### FIN.
 
 ---
 
 Auteur Guy Francoeur :copyright: version A2019
-
-  
