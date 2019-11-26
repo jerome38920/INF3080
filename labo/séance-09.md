@@ -60,12 +60,24 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
  Vous devez créer un script nommé s09_n03.sql qui fera tout ce qui est nécessaire pour remettre le schéma 
  `inf3080b` dans l'état initial.  Vous ne devez pas effacer les objets de vos collègues.  Vous devez aussi
- dans le script enlever les droits initialement donnés.
+ en utilisant le même script enlever les droits initialement donnés.
+
+## 4 - SQL*loader
+
+Vous devez créer un nommé `t_commandeE` (t car elle est temporaire) et faire l'import des données qui suivent.
+Les domaines de champs (colonne) sont détectables a l'aide de la notation hongroise et des valeur proposées.
+
+| pCommandeE | dCommandeE | nCommande |
+| ---------- | ---------- | --------- |
+| 10         | 2019-30-01 | 90.19 |
+| 20         | 2018-28-02 | 1000.97 |
+| 31         | 2017-15-03 | 1100.02 |
 
 ### Questions :
 
  + Q2.  Quelles sont les commandes qui permettent de changer d'usager sans fermer SQL*plus ?
  + Q2.  Combien de temps a été nécessaire pour faire l'atelier ?
+ + Q3.  Lorsque nous travaillons avec un outils d'import comme SQL*loader que devons-vous garder en tête ?
 
 ### FIN.
 
