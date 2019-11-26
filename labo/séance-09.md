@@ -52,7 +52,8 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
  Vous devez maintenant utiliser le schéma `inf3080b` et créer des synonymes pour les tables du #1. Ajouter
  votre codeMS dans le nom du synonyme. Une fois ceci fait vous devez créer une vue (view) nommée `v_codems`
- qui utilise les synonymes. Finalement, faire un SELECT sur la vue `v_codeMS`. LE CodeMS est bien sur votre codeMS, pas le mot codeMS.
+ qui utilise les synonymes. Finalement, faire un SELECT sur la vue `v_codeMS`. Le CodeMS est bien sur votre codeMS
+ (la translation de celui-ci), pas le mot codeMS.
 
  + Q1. Pourquoi ajouter le/votre `codeMS` au nom du synonyme ?
 
