@@ -64,15 +64,15 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 
 ## 4 - SQL*loader
 
-Vous devez créer un nommé `t_commandeE` (t car elle est temporaire) et faire l'import des données qui suivent.
+Dans la table `Historique` déjà créer vous devez importer les données ci-bas.
 Les domaines de champs (colonne) sont détectables a l'aide de la notation hongroise et des valeur proposées.
 Garder votre progression dans un script nommé `s09n04.sql`.
 
-| pCommandeE | dCommandeE | nCommandeE |
-| ---------- | ---------- | --------- |
-| 10         | 30-2019-01 | 90.19 |
-| 20         | 28-2018-12 | 1000.97 |
-| 31         | 15-2017-12 | 1100.02 |
+| pHistorique | dCreation | dExpiration | cIP |
+| ---------- | ---------- | ----------- | ---- |
+| 10         | 30-2019-01 | 01-2019-30 | 192.168.1.100 |
+| 20         | 28-2018-12 | 12-2018-29 | 192.168.2.200 |
+| 31         | 15-2017-12 | 12-2017-16 | 192.168.3.254 |
 
 ### Questions :
 
