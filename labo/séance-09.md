@@ -65,14 +65,14 @@ vous entraîner à utiliser le logiciel (commandes) naturellement.
 ## 4 - SQL*loader
 
 Dans la table `Historique` déjà créer vous devez importer les données ci-bas.
-Les domaines de champs (colonne) sont détectables a l'aide de la notation hongroise et des valeur proposées.
-Garder votre progression dans un script nommé `s09n04.sql`.
+Les domaines de champs (colonne) sont détectables à l'aide de la notation hongroise et des valeur proposées.
 
-| pHistorique | dCreation | dExpiration | cIP |
-| ---------- | ---------- | ----------- | ---- |
-| 10         | 30-2019-01 | 01-2019-30 | 192.168.1.100 |
-| 20         | 28-2018-12 | 12-2018-29 | 192.168.2.200 |
-| 31         | 15-2017-12 | 12-2017-16 | 192.168.3.254 |
+
+| pHistorique | dCreation | dExpiration | cIP | pLangue |
+| ----------- | ---------- | ----------- | ---- | 1 |
+| 10         | 30-2019-01 | 01-2019-30 | 192.168.1.100 | 2 | 
+| 20         | 28-2018-12 | 12-2018-29 | 192.168.2.200 | 3 |
+| 31         | 15-2017-12 | 12-2017-16 | 192.168.3.254 | 4 |
 
 ### Questions :
 
