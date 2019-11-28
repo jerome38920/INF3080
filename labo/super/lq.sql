@@ -1,6 +1,20 @@
 --Les noms des tables ont ete change pour ne pas creer de conflit.
 --Vous avez ete tres bon j'ai decider de mettre un petit extra.
---
+--*
+--* FRAG 2019-11-28 changement sur l'environnement SQL*plus
+--==================================================================
+DEFINE _EDITOR = nano
+set linesize 32767
+set pagesize 10000
+set long 4000
+set longchunksize 4000
+set timing off
+set heading off
+set echo off
+SET SERVEROUTPUT ON
+SET EXITCOMMIT ON
+SET SQLPROMPT "_USER ::: SQL> "
+
 DROP TABLE SiteDetaillant CASCADE CONSTRAINTS PURGE;
 
 DROP TABLE Detaillant CASCADE CONSTRAINTS PURGE;
@@ -154,6 +168,22 @@ CONSTRAINT R_8 FOREIGN KEY (pSite) REFERENCES Site (pSite)
 
 -- Validation de notre travail.
 SELECT table_name FROM user_tables WHERE UPPER(table_name) IN 
+('SITEDETAILLANT'
+,'DETAILLANT'
+,'SERVICEE'
+,'SERVICED'
+,'EMPLOYE'
+,'MACHINE'
+,'TYPEMACHINE'
+,'VILLE'
+,'PROVINCE'
+,'PAYS'
+,'MODELE'
+,'REVISION'
+,'SITE'
+);
+
+SELECT count(*) as NOMBRE_TABLES FROM user_tables WHERE UPPER(table_name) IN 
 ('SITEDETAILLANT'
 ,'DETAILLANT'
 ,'SERVICEE'
