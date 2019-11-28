@@ -2,6 +2,13 @@
 
 Nous avons dans ce projet toutes les notions vues cette année.
 
+ + Le modèle entité-association a été finalisé pour que vous puissiez compléter. Bravo pour la réflexion.
+ + Merci de m'avoir dit que ceratines tables ne sont pas nécessaire.
+ + Pas facile de travailler 50 personnes en même temps. :wink:
+ + Si des modifications doivent être apporté sir les tables `01_schema.sql` faites le.
+ + ajouter dans l'entête de fichier (cp4 date raison)
+   - FRAG 2019-11-28 besoin de deux attributs dans la tables employe.
+ 
 ### Vous devez compléter 
 
  + Script de chargement 
@@ -10,8 +17,8 @@ Nous avons dans ce projet toutes les notions vues cette année.
    - 7500 lignes dans `detaillant`;
    - combien dans `sitedetaillant` ?
    - 13 provinces et territoires + 1 pays;
-   - 100 lignes dans villes;
-   - 5 lignes dans `modeles` + 5 lignes dans `typeMachine`;
+   - 100 lignes dans `villes`;
+   - 5 lignes dans `modele` + 5 lignes dans `typeMachine`;
    - 50 lignes dans `revision`;
    - 50 lignes dans `employe`;
    - 1000 lignes dans `serviceE`;
