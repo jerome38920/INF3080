@@ -42,6 +42,16 @@ Nous avons dans ce projet toutes les notions vues cette année.
  
  ![modele LQ](https://github.com/guyfrancoeur/INF3080/blob/master/labo/super/modele-lq.png)
  
+ ## Pourquoi des tables comme ville et province ?
+ 
+ #### Definition - What does Second Normal Form (2NF) mean?
+   + Second normal form (2NF) is the second step in normalizing a database. 2NF builds on the first normal form (1NF).
+   + Normalization is the process of organizing data in a database so that it meets two basic requirements:
+     - There is no redundancy of data (all data is stored in only one place).
+     - Data dependencies are logical (all related data items are stored together).
+ 
+ Source : technopedia
+ 
  ##### FIN.
  ---
  Auteur Guy Francoeur :copyright: 2019
