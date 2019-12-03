@@ -45,20 +45,20 @@ Nous avons dans ce projet toutes les notions vues cette année.
  Les fichiers aurons les noms suivants :
    + 01_schema.sql
    + 02_sequence.sql
-   + 03`lettre`_trigger.sql
-      - 03a_trigger.sql :arrowright: SiteDetaillant
-      - b :arrowright: Detaillant
-      - c :arrowright: ServiceD
-      - d :arrowright: ServiceE
-      - e :arrowright: Employe
-      - f :arrowright: Machine
-      - g :arrowright: Site
-      - h :arrowright: Ville
-      - i :arrowright: Province
-      - j :arrowright: Pays
-      - k :arrowright: TypeMachine
-      - l :arrowright: Revision
-      - m :arrowright: Modele
+   + 03``lettre``_trigger.sql
+      - 03a_trigger.sql :arrow_right: SiteDetaillant
+      - b :arrow_right: Detaillant
+      - c :arrow_right: ServiceD
+      - d :arrow_right: ServiceE
+      - e :arrow_right: Employe
+      - f :arrow_right: Machine
+      - g :arrow_right: Site
+      - h :arrow_right: Ville
+      - i :arrow_right: Province
+      - j :arrow_right: Pays
+      - k :arrow_right: TypeMachine
+      - l :arrow_right: Revision
+      - m :arrow_right: Modele
     + 04`lettre`_charger.sql
     + 05a.sql requêtes 
       - Lister toutes les machines qui ont la dernière révision dans le Québec.
