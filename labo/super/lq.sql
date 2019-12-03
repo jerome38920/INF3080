@@ -2,6 +2,7 @@
 --Vous avez ete tres bon j'ai decider de mettre un petit extra.
 --*
 --* FRAG 2019-11-28 changement sur l'environnement SQL*plus
+--* FRAG 2019-12-03 changement sur la table detaillant
 --==================================================================
 DEFINE _EDITOR = nano
 set linesize 32767
