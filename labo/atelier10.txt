@@ -1,0 +1,103 @@
+-- 1 - Privileges
+GRANT ALL PRIVILEGES ON DETAILLANT TO jk891197;
+GRANT ALL PRIVILEGES ON TYPEMACHINE TO jk891197;
+GRANT ALL PRIVILEGES ON MACHINE TO jk891197;
+GRANT ALL PRIVILEGES ON REVISION TO jk891197;
+GRANT ALL PRIVILEGES ON MODELE TO jk891197;
+GRANT ALL PRIVILEGES ON SERVICEE TO jk891197;
+GRANT ALL PRIVILEGES ON SERVICED TO jk891197;
+GRANT ALL PRIVILEGES ON EMPLOYE TO jk891197;
+GRANT ALL PRIVILEGES ON PROVINCE TO jk891197;
+GRANT ALL PRIVILEGES ON VILLE TO jk891197;
+GRANT ALL PRIVILEGES ON PAYS TO jk891197;
+GRANT ALL PRIVILEGES ON SITE TO jk891197;
+GRANT ALL PRIVILEGES ON SITEDETAILLANT TO jk891197;
+
+
+-- 2 - Creation des sequences+triggers
+-- Omis ici, revoir les anciens ateliers
+
+-- 3 - Creation des donnees
+-- NOTA: Ceci n'inclut pas toutes les tables !
+CREATE OR REPLACE PROCEDURE p_InsertData_Machine (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO MACHINE (CMACHINE, BACTIF,CSERIE,DINSTALLATION,PMODELE,PREVISION,PTYPEMACHINE,PSITE)
+       VALUES (CONCAT('MACHINE-', i), 1, 'serieA','01-01-2019',round(dbms_random.value(1,4)),1,round(dbms_random.value(1,4)),round(dbms_random.value(2000,14999)));
+   END LOOP;
+end;
+
+CREATE OR REPLACE PROCEDURE p_InsertData_Province (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO PROVINCE (CPROVINCE, PPAYS)
+       VALUES (CONCAT('PROVINCE-', i), 1);
+   END LOOP;
+end;
+
+CREATE OR REPLACE PROCEDURE p_InsertData_Ville (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO VILLE (CVILLE, PPROVINCE)
+       VALUES (CONCAT('VILLE-', i), round(dbms_random.value(1,13)));
+   END LOOP;
+end;
+
+CREATE OR REPLACE PROCEDURE p_InsertData_Site (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO SITE (CADRESSE, PVILLE)
+       VALUES (CONCAT('SITE-', i), round(dbms_random.value(2,100)));
+   END LOOP;
+end;
+
+CREATE OR REPLACE PROCEDURE p_InsertData_Employe (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO PROVINCE (CEMPLOYE)
+       VALUES (CONCAT('EMPLOYE-', i));
+   END LOOP;
+end;
+
+
+CREATE OR REPLACE PROCEDURE p_InsertData_ServiceE (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO SERVICEE (DSERVICEE,DSITE,PEMPLOYE)
+       VALUES (TO_DATE(TRUNC(DBMS_RANDOM.VALUE(2458485,2458485+364)),'J'), round(dbms_random.value(2000,14999)), round(dbms_random.value(700,1000)));
+   END LOOP;
+end;
+
+CREATE OR REPLACE PROCEDURE p_InsertData_ServiceD (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO SERVICED (CDESCRIPTION,NDUREE,PMACHINE,PSERVICEE)
+       VALUES (CONCAT('Description-',i), round(dbms_random.value(1,120)), round(dbms_random.value(500,50000)), round(dbms_random.value(1,10000)));
+   END LOOP;
+end;
+
+
+CREATE OR REPLACE PROCEDURE p_InsertData_Detaillant (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO DETAILLANT (CDETAILLANT)
+       VALUES (CONCAT('Detaillant-',i));
+   END LOOP;
+end;
+
+CREATE OR REPLACE PROCEDURE p_InsertData_SiteDetaillant (nbrLignes IN NUMBER) IS
+BEGIN
+   FOR i IN 1..nbrLignes
+   LOOP
+       INSERT INTO SITEDETAILLANT (PSITE,PDETAILLANT)
+       VALUES (round(dbms_random.value(2000,14000)),  round(dbms_random.value(1,7500)));
+   END LOOP;
+end;
