@@ -153,7 +153,9 @@ CREATE TABLE Detaillant
 (
 	pDetaillant          NUMBER NOT NULL ,
 	cDetaillant          VARCHAR2(50) NULL ,
-CONSTRAINT  XPKDetaillant PRIMARY KEY (pDetaillant)
+	pVille               NUMBER NULL ,
+CONSTRAINT  XPKDetaillant PRIMARY KEY (pDetaillant),
+CONSTRAINT R_20 FOREIGN KEY (pVille) REFERENCES Ville (pVille)
 );
 
 CREATE TABLE SiteDetaillant
