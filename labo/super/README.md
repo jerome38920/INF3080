@@ -5,7 +5,7 @@ Nous avons dans ce projet toutes les notions vues cette année.
  + Le modèle entité-association a été finalisé pour que vous puissiez compléter. Bravo pour la réflexion.
  + Merci de m'avoir dit que ceratines tables ne sont pas nécessaire.
  + Pas facile de travailler 50 personnes en même temps. :wink:
- + Si des modifications doivent être apporté sir les tables `01_schema.sql` faites le.
+ + Si des modifications doivent être apporté sur les tables `01_schema.sql` faites le.
  + ajouter dans l'entête de fichier (cp4 date raison)
    - FRAG 2019-11-28 besoin de deux attributs dans la tables employe.
  
@@ -39,6 +39,35 @@ Nous avons dans ce projet toutes les notions vues cette année.
  
  + Nous allons continuer avec vos scripts au prochain cours.
    - tentez de rouler tout ... on va voir si ça marche.
+ 
+ ### Nomenclature proposée
+ 
+ Les fichiers aurons les noms suivants :
+   + 01_schema.sql
+   + 02_sequence.sql
+   + 03`lettre`_trigger.sql
+      - 03a_trigger.sql :arrowright: SiteDetaillant
+      - b :arrowright: Detaillant
+      - c :arrowright: ServiceD
+      - d :arrowright: ServiceE
+      - e :arrowright: Employe
+      - f :arrowright: Machine
+      - g :arrowright: Site
+      - h :arrowright: Ville
+      - i :arrowright: Province
+      - j :arrowright: Pays
+      - k :arrowright: TypeMachine
+      - l :arrowright: Revision
+      - m :arrowright: Modele
+    + 04`lettre`_charger.sql
+    + 05a.sql requêtes 
+      - Lister toutes les machines qui ont la dernière révision dans le Québec.
+    + 05b.sql
+      - à venir
+    + 06.sql
+      - optimisation
+    +
+      
  
  ![modele LQ](https://github.com/guyfrancoeur/INF3080/blob/master/labo/super/modele-lq.png)
  
