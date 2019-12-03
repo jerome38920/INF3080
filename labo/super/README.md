@@ -31,8 +31,8 @@ Nous avons dans ce projet toutes les notions vues cette année.
    
  + **Tout le monde doit contribuer.** 
    - Faites une chose et laissez le suivant continuer;
-   - Un fichier par taches;
-   - Faire des demandes fusion git;
+   - Un fichier par tâches accomplies;
+   - Faire des demandes fusion _(merge request)_ ;
    - Utiliser de toutes les lignes contenues dans la table lorsqu'il y a des clés étrangères;
    - Le dernier étudiant devra faire l'assemblage de tous les fichiers;
    - Il faut devenir précis dans le nom de vos fichiers afin de créer la bonne séquence d'exécution de script.
