@@ -59,14 +59,14 @@ Nous avons dans ce projet toutes les notions vues cette année.
       - k :arrow_right: TypeMachine
       - l :arrow_right: Revision
       - m :arrow_right: Modele
-    + 04`lettre`_charger.sql
-    + 05a.sql requêtes 
+   + 04``lettre``_charger.sql
+   + 05a.sql requêtes 
       - Lister toutes les machines qui ont la dernière révision dans le Québec.
-    + 05b.sql
+   + 05b.sql
       - à venir
-    + 06.sql
+   + 06.sql
       - optimisation
-    +
+   +
       
  
  ![modele LQ](https://github.com/guyfrancoeur/INF3080/blob/master/labo/super/modele-lq.png)
