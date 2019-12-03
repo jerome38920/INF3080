@@ -17,7 +17,7 @@ Nous avons dans ce projet toutes les notions vues cette année.
    - 7500 lignes dans `detaillant`;
    - combien dans `sitedetaillant` ?
    - 13 provinces et territoires + 1 pays;
-   - 100 `villes` par province;
+   - 100 `villes` par `province`;
    - 5 lignes dans `modele` + 5 lignes dans `typeMachine`;
    - 50 lignes dans `revision`;
    - 50 lignes dans `employe`;
