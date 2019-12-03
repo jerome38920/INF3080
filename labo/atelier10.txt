@@ -64,7 +64,7 @@ BEGIN
    END LOOP;
 end;
 
-
+-- https://www.techrepublic.com/article/use-dbms-random-to-generate-text-and-date-values/
 CREATE OR REPLACE PROCEDURE p_InsertData_ServiceE (nbrLignes IN NUMBER) IS
 BEGIN
    FOR i IN 1..nbrLignes
